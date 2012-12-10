@@ -15,11 +15,12 @@ public:
 
 class decoder{
   std::string slovar;
-  std::string buffer;
   std::string str;
+	void sub_code(std::string code);
+	void parse(std::string sub_code);
 public:
-  decoder(int a, int b, std::string code, bool optim);
-  std::string get_code();
+  decoder(int a, int b, std::string code);
+  std::string get_str();
 };
 
 std::string add_text(std::string a, std::string b);
